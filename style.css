@@ -1,0 +1,38 @@
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h5 {
+    width: fit-content;
+    border-bottom: 1px solid white;
+}
+
+.main {
+    width: 100%;
+    transform: scale(.9);
+}
+
+.todo {
+    font-weight: 100;
+}
+
+p {
+    text-transform: capitalize;
+}
+
+p[data-after]::after {
+    content: attr(data-after);
+    display: block;
+    font-size: .7em;
+    font-weight: 500
+}
+
+body {
+    background: url('bg.svg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat';
+    height: 100vh;
+    color: white;
+}
